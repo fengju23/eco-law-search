@@ -1,0 +1,13 @@
+{
+  "appId": "cn.qingshan.lawcode",
+  "appName": "生态环境法典检索",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "android": {
+    "allowMixedContent": false,
+    "webContentsDebuggingEnabled": false
+  },
+  "server": {
+    "androidScheme": "https"
+  }
+}

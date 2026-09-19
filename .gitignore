@@ -1,0 +1,52 @@
+# ---- 依赖与构建产物 ----
+node_modules/
+dist/
+dist-ssr/
+.npm-cache/
+apk/
+
+# ---- 日志 ----
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- 编辑器与系统 ----
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.local
+
+# ---- 生成的素材（体积大，可用 scripts 一键重建，见 README）----
+public/sounds/
+public-mobile/sounds/
+assets-archive/
+
+# ---- 第三方页面副本（仅用于本地提取数据，不随仓库分发）----
+scripts/law-raw.html
+
+# ---- Android 签名与密钥（严禁提交）----
+android/key.properties
+*.jks
+*.keystore
+
+# ---- Android 构建产物与本地配置 ----
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json
+android/capacitor-cordova-android-plugins/
+public-mobile/data/
+public-mobile/favicon.svg

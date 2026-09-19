@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>生态环境法典检索 · 使用说明书</title>
+<style>
+  :root{
+    --bg:#f7faf8; --card:#fff; --ink:#1f2d27; --ink2:#55685f; --ink3:#8b9c94;
+    --line:#e4ece7; --green900:#1b4a36; --green700:#2f7a5e; --green500:#4a9d78;
+    --green100:#e8f5ee; --mark:#ffe9a8; --code:#f3f7f4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#131a17; --card:#1a231f; --ink:#e6efe9; --ink2:#a9b8b1; --ink3:#7b8a84;
+      --line:#2b3733; --green900:#b9e0cb; --green700:#7fc3a2; --green500:#5fae89;
+      --green100:#22302b; --code:#1e2925; --mark:#6b5416; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    font-size:16.5px;line-height:1.95;-webkit-text-size-adjust:100%;
+    text-rendering:optimizeLegibility}
+  .wrap{max-width:820px;margin:0 auto;padding:20px 16px 64px}
+  header.doc{background:linear-gradient(145deg,var(--green900),var(--green700));color:#fff;
+    border-radius:18px;padding:26px 26px 22px;margin-bottom:18px}
+  header.doc h1{margin:0;font-size:23px;letter-spacing:1.5px;font-family:"STKaiti","KaiTi",serif;line-height:1.5}
+  header.doc p{margin:8px 0 0;font-size:13.5px;opacity:.92;line-height:1.7}
+  nav.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:16px 20px;margin-bottom:18px}
+  nav.toc strong{display:block;font-size:14px;color:var(--green700);margin-bottom:10px}
+  nav.toc a{display:inline-block;margin:4px 12px 4px 0;font-size:14px;color:var(--ink2);
+    text-decoration:none;border-bottom:1px dashed var(--line);line-height:2}
+  nav.toc a:active{color:var(--green700)}
+  main{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 24px 34px}
+  h1{font-size:21px;color:var(--green900);margin:30px 0 12px;line-height:1.5}
+  h2{font-size:19.5px;color:var(--green900);margin:38px 0 14px;padding-bottom:10px;
+    border-bottom:2px solid var(--green100);line-height:1.5}
+  h3{font-size:17px;color:var(--green700);margin:26px 0 10px;line-height:1.5}
+  h4{font-size:16px;color:var(--ink);margin:20px 0 8px;line-height:1.5}
+  h2:first-child,h1:first-child{margin-top:6px}
+  p{margin:12px 0;font-size:16px;line-height:1.95}
+  ul,ol{margin:12px 0 12px 22px;padding:0}
+  li{margin:7px 0;font-size:16px;line-height:1.9}
+  code{background:var(--code);border:1px solid var(--line);border-radius:6px;
+    padding:2px 7px;font-size:14.5px;font-family:ui-monospace,Consolas,monospace}
+  pre{background:var(--code);border:1px solid var(--line);border-radius:14px;
+    padding:16px;overflow-x:auto;margin:14px 0}
+  pre code{background:none;border:none;padding:0;font-size:14px;line-height:1.85}
+  blockquote{margin:14px 0;padding:14px 20px;background:var(--green100);
+    border-left:4px solid var(--green500);border-radius:0 12px 12px 0;color:var(--ink2);
+    font-size:15.5px;line-height:1.9}
+  hr{border:none;border-top:1px dashed var(--line);margin:30px 0}
+  .tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+  table{border-collapse:collapse;width:100%;min-width:400px;font-size:15px}
+  th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top;line-height:1.75}
+  th{background:var(--green100);color:var(--green900);font-weight:700;white-space:nowrap}
+  tr:nth-child(even) td{background:var(--code)}
+  strong{color:var(--green900)}
+  footer{margin-top:24px;text-align:center;font-size:13px;color:var(--ink3);line-height:2}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="doc">
+  <h1>生态环境法典检索 · 使用说明书</h1>
+  <p>版本 1.0 ｜ 适用于 Android App（APK）与网页版</p>
+</header>
+<nav class="toc"><strong>目录</strong><a href="#h-一-它能帮你做什么-0">一、它能帮你做什么</a><a href="#h-二-装到手机上-三步-1">二、装到手机上（三步）</a><a href="#h-三-第一次打开会看到什么-2">三、第一次打开会看到什么</a><a href="#h-四-怎么查-挑一种就行-3">四、怎么查（挑一种就行）</a><a href="#h-五-搜出来的结果怎么看-4">五、搜出来的结果怎么看</a><a href="#h-六-看条文的时候能做什么-5">六、看条文的时候能做什么</a><a href="#h-七-让眼睛舒服一点-6">七、让眼睛舒服一点</a><a href="#h-八-常见问题-7">八、常见问题</a><a href="#h-九-几句要紧的提醒-8">九、几句要紧的提醒</a><a href="#h-附录一-18-个常见场景-点一下就能查-9">附录一　18 个常见场景，点一下就能查</a><a href="#h-附录二-法典里的行话-一句话看懂-10">附录二　法典里的行话，一句话看懂</a><a href="#h-附录三-遇到问题-找谁-11">附录三　遇到问题，找谁</a></nav>
+<main>
+<h1>生态环境法典检索 · 使用说明书</h1>
+<p>一个装进手机里的&quot;法典查询小工具&quot;。把《中华人民共和国生态环境法典》<strong>全部 1242 条</strong>放进口袋，遇到事儿随手一搜，就能找到对应的法条，看看法律到底怎么规定的。</p>
+<p>不用注册，不用联网，没有广告。</p>
+<hr/>
+<h2 id="h-一-它能帮你做什么-0">一、它能帮你做什么</h2>
+<div class="tw"><table>
+<thead><tr><th>你遇到的事</th><th>你可以这样搜</th><th>你会看到</th></tr></thead>
+<tbody>
+<tr><td>楼下烧烤油烟往家里灌</td><td>搜&quot;<strong>烧烤</strong>&quot;或点左边&quot;楼下烧烤油烟&quot;</td><td>油烟该怎么管、最高能罚多少</td></tr>
+<tr><td>广场舞音响太吵</td><td>搜&quot;<strong>广场舞</strong>&quot;</td><td>噪声扰民的规定、个人最高罚多少</td></tr>
+<tr><td>有人半夜在河里电鱼</td><td>搜&quot;<strong>电鱼</strong>&quot;</td><td>禁止使用的捕捞方式、要承担什么后果</td></tr>
+<tr><td>想知道违法了会被罚多重</td><td>搜&quot;<strong>按日连续处罚</strong>&quot;</td><td>拖着不改，罚款按天累计</td></tr>
+<tr><td>装修电钻吵得没法休息</td><td>搜&quot;<strong>装修</strong>&quot;</td><td>装修该在什么时间进行</td></tr>
+<tr><td>想写材料引用法条</td><td>在任何条文页点一下&quot;复制引用&quot;</td><td>自动生成规范的引用文字</td></tr>
+</tbody></table></div>
+<p>简单说：<strong>用你平常说的话去搜就行</strong>，不需要懂法律术语。</p>
+<hr/>
+<h2 id="h-二-装到手机上-三步-1">二、装到手机上（三步）</h2>
+<p><strong>第一步</strong>：把安装包（<code>生态环境法典检索-v1.0.apk</code>）传到手机 用微信&quot;文件传输助手&quot;发给自己，或者用数据线拷贝，都可以。</p>
+<p><strong>第二步</strong>：在手机上点一下这个文件 手机会问&quot;是否允许安装&quot;，选<strong>允许</strong>。 如果提示&quot;未知来源应用&quot;，进入弹出的设置里把对应来源（比如微信、文件管理）设为允许安装，然后再点一次。</p>
+<p><strong>第三步</strong>：装好后，桌面会出现一个图标 <strong>绿色方块 + 白色天平</strong>，名字叫「生态环境法典检索」，点开就能用。</p>
+<blockquote>第一次打开需要一两秒准备（把 1242 条法条读进手机），之后就很快了。</blockquote>
+<p><strong>手机要求</strong>：安卓 7.0 以上基本都可以。</p>
+<hr/>
+<h2 id="h-三-第一次打开会看到什么-2">三、第一次打开会看到什么</h2>
+<p>屏幕分成四块：</p>
+<ul>
+<li><strong>最上面</strong>：一个搜索框（想查什么就打在这里），右边还有小喇叭和几个小图标</li>
+<li><strong>左边</strong>：一列&quot;生活场景&quot;——不懂法条怎么说，就从这里点</li>
+<li><strong>中间</strong>：主页，显示这部法典的规模和常见问题入口</li>
+<li><strong>右边</strong>：目录，从第一编到第五编，可以一层层展开</li>
+</ul>
+<p>一句话使用逻辑：<strong>左边是&quot;我遇到的事&quot;，中间是&quot;答案&quot;，右边是&quot;整本书的目录&quot;。</strong></p>
+<hr/>
+<h2 id="h-四-怎么查-挑一种就行-3">四、怎么查（挑一种就行）</h2>
+<h3>方式一：直接搜 —— 最快</h3>
+<p>在搜索框里打上关键词，按回车（手机上点&quot;检索&quot;）。</p>
+<p>用平常的话就行，系统会自动往法律用语上靠：</p>
+<div class="tw"><table>
+<thead><tr><th>你打这些</th><th>也能搜出这些</th></tr></thead>
+<tbody>
+<tr><td>噪音</td><td>噪声、音量、声响</td></tr>
+<tr><td>垃圾</td><td>固体废物、建筑垃圾、渣土</td></tr>
+<tr><td>广场舞</td><td>娱乐、健身活动</td></tr>
+<tr><td>烧秸秆</td><td>秸秆、露天焚烧</td></tr>
+<tr><td>广告屏太亮</td><td>光污染、照明</td></tr>
+<tr><td>烧烤、油烟</td><td>餐饮、恶臭、异味</td></tr>
+<tr><td>罚多少钱</td><td>罚款、处罚</td></tr>
+</tbody></table></div>
+<p>想同时满足两个条件，中间空一格：<code>噪声 处罚</code>（两条都要提到）。</p>
+<h3>方式二：不知道法条怎么说的 —— 点左边&quot;生活场景&quot;</h3>
+<p>左边列了 18 种最常见的烦心事，<strong>点一下就等于替你搜好了</strong>，不用自己想词：</p>
+<p>广场舞太吵 · 楼下烧烤油烟 · 周末装修电钻 · 夜间施工吵人 · 有人烧秸秆 · 广告屏彻夜亮 · 偷倒建筑垃圾 · 货车冒黑烟 · 河里有人电鱼 · 工厂偷排废水 · 罚款能罚多重 · 谁来替生态告状 · 企业要办什么证 · 往海里倒垃圾 · 绿水青山的红线 · 光伏发电有说法吗 · 快递包装太夸张 · 我想举报怎么办</p>
+<h3>方式三：想从头了解 —— 点右边&quot;目录&quot;</h3>
+<p>右边是法典的骨架，一共五编：</p>
+<ul>
+<li><strong>第一编 总则</strong>：总原则、谁来管、信息怎么公开</li>
+<li><strong>第二编 污染防治</strong>：大气、水、海洋、土壤、垃圾、噪声、放射性</li>
+<li><strong>第三编 生态保护</strong>：山水林田湖草沙、保护红线、生物多样性</li>
+<li><strong>第四编 绿色低碳发展</strong>：清洁生产、循环利用、节能降碳</li>
+<li><strong>第五编 法律责任和附则</strong>：怎么罚、怎么赔、从哪天生效</li>
+</ul>
+<p>点其中任意一章，中间就会列出这一章的全部条文。</p>
+<h3>会一点点&quot;进阶搜法&quot;（不用记，需要时回来翻）</h3>
+<div class="tw"><table>
+<thead><tr><th>这样写</th><th>意思</th><th>例子</th></tr></thead>
+<tbody>
+<tr><td>两个词加空格</td><td>两条都要出现</td><td><code>噪声 处罚</code></td></tr>
+<tr><td>用英文双引号</td><td>只找完整这句话</td><td><code>&quot;生态环境主管部门&quot;</code></td></tr>
+<tr><td>减号</td><td>要前面的，不要后面的</td><td><code>噪声 -施工</code></td></tr>
+<tr><td><code>条:数字</code></td><td>直接跳到某一条</td><td><code>条:570</code></td></tr>
+<tr><td><code>条:起-止</code></td><td>只看某一段</td><td><code>条:100-200</code></td></tr>
+<tr><td><code>编:名称</code></td><td>只在某一编里找</td><td><code>编:污染防治</code></td></tr>
+</tbody></table></div>
+<hr/>
+<h2 id="h-五-搜出来的结果怎么看-4">五、搜出来的结果怎么看</h2>
+<ul>
+<li>最上面的大数字：<strong>一共找到多少条</strong></li>
+<li>数字旁边&quot;<strong>命中分布</strong>&quot;：各编各找到多少，<strong>点一下就能只看那一编</strong></li>
+<li>每条结果分三行：</li>
+<li><strong>第几条</strong> + 它属于哪一编哪一章</li>
+<li>一小段原文，<strong>你搜的词用黄色标出来</strong>了，方便一眼看到</li>
+<li>右上角的小数字是&quot;相关程度&quot;，越相关越大</li>
+<li>一屏看不完：点最下面&quot;<strong>显示更多</strong>&quot;</li>
+<li>觉得顺序不合适：右上角可切换&quot;按相关度&quot;或&quot;<strong>按条号</strong>&quot;（按条号就是从第一条往后排，适合顺序通读）</li>
+<li>点任意一条，就进入<strong>条文全文</strong></li>
+</ul>
+<hr/>
+<h2 id="h-六-看条文的时候能做什么-5">六、看条文的时候能做什么</h2>
+<p>条文页顶上有一排按钮：</p>
+<div class="tw"><table>
+<thead><tr><th>按钮</th><th>作用</th></tr></thead>
+<tbody>
+<tr><td>☆</td><td><strong>收藏</strong>这条（再点取消）。以后在左边&quot;我的收藏&quot;里能找回来</td></tr>
+<tr><td>📋</td><td><strong>复制引用</strong>：自动生成 <code>《中华人民共和国生态环境法典》第X条</code>，写材料直接用</td></tr>
+<tr><td>📄</td><td><strong>复制全文</strong>：把整条原文复制走</td></tr>
+<tr><td>🔊</td><td><strong>朗读</strong>这条（再点一次停止）。适合开车、走路、眼睛累的时候听</td></tr>
+<tr><td>A− A+</td><td>把字<strong>调小 / 调大</strong>（调好后会记住）</td></tr>
+<tr><td>← 上一条 · 下一条 →</td><td>按顺序翻看相邻条文</td></tr>
+<tr><td>中间小输入框</td><td>直接输入条号，回车就跳过去</td></tr>
+</tbody></table></div>
+<p><strong>正文里的彩色小标签很有用</strong>：</p>
+<ul>
+<li><strong>绿色标签</strong>（例如&quot;本法第五十七条&quot;）→ <strong>点它就能跳到那一条</strong></li>
+<li><strong>灰色标签</strong> → 条文提到的其他法律</li>
+<li><strong>红色&quot;已废止&quot;</strong> → 这部旧法律已经并入本法典，不再单独施行了</li>
+<li><strong>带虚线的词</strong> → 长按（电脑上鼠标悬停）能看到白话解释</li>
+</ul>
+<p><strong>条文最下面还有&quot;相关条文&quot;</strong>：系统自动挑出 6 条内容最接近的条文，看完这条想再看看相关的，点进去即可。</p>
+<hr/>
+<h2 id="h-七-让眼睛舒服一点-6">七、让眼睛舒服一点</h2>
+<ul>
+<li><strong>换颜色</strong>：右上角三个小图标 —— 太阳（白底）、卷轴（护眼米黄）、月亮（夜间深色）</li>
+<li><strong>调字号</strong>：条文页的 A− / A+，从很小到很大都能调</li>
+<li><strong>放点声音</strong>：右上角小喇叭旁边有四个图标 —— 细雨、溪流、松风、钟磬。</li>
+</ul>
+<p>点一下开始播放，再点一下关闭；旁边小滑块调音量。<strong>默认是关着的</strong>，不会自己响。</p>
+<ul>
+<li>以上设置<strong>都会自动记住</strong>，下次打开还是你调好的样子。</li>
+</ul>
+<hr/>
+<h2 id="h-八-常见问题-7">八、常见问题</h2>
+<p><strong>1. 要联网吗？</strong> 不用。装好之后，开飞行模式也能正常查、正常看、正常听朗读。1242 条法条和搜索功能都在手机里。</p>
+<p><strong>2. 会不会把我搜的东西传出去？</strong> 不会。你搜了什么、收藏了什么，只存在你自己手机上。这个工具没有任何账号，也不连服务器。</p>
+<p><strong>3. 搜不到想要的内容怎么办？</strong> 三个办法挨个试： ① 把词换短一点，比如&quot;生态环境保护监督管理&quot;→ 改搜&quot;监督管理&quot;； ② 换你平常的说法，比如&quot;噪音扰民&quot;→ 改搜&quot;噪音&quot;； ③ 点左边的&quot;生活场景&quot;，那 18 个是验证过一定能查到的。</p>
+<p><strong>4. 点朗读没有声音？</strong> 先看手机<strong>媒体音量</strong>是不是最低；如果还是没声音，去手机的「设置 → 语言和输入 → 文字转语音」里，确认已安装或更新<strong>中文（简体）语音包</strong>。</p>
+<p><strong>5. 点了背景音没反应？</strong> 背景音默认是关闭的，需要点小喇叭旁边那四个图标之一才会开始播放。手机竖屏时看不到音量滑块，直接点图标开关就行。</p>
+<p><strong>6. 条文里写&quot;已废止&quot;是什么意思？</strong> 法典生效那天，有 10 部旧法律（环境保护法、大气污染防治法、水污染防治法、海洋环境保护法、土壤污染防治法、固体废物污染环境防治法、噪声污染防治法、放射性污染防治法、环境影响评价法、清洁生产促进法）被整合进法典、不再单独施行。所以条文里如果提到这些旧法，会标&quot;已废止&quot;，提醒你内容已经并入法典了。</p>
+<p><strong>7. 这里查到的条文，能直接当法律依据用吗？</strong> 查资料、学习、写材料都没问题。但涉及真正的维权、投诉、打官司，<strong>要以官方正式文本和有权机关的解释为准</strong>。遇到实际纠纷，建议咨询专业律师或直接向主管部门反映。</p>
+<p><strong>8. 手机上点安装包没反应 / 提示装不上？</strong> 多半是系统拦截了&quot;未知来源应用&quot;，在「设置 → 安全 → 安装未知应用」里允许对应来源（微信、文件管理器等）安装即可。如果提示文件损坏，重新传一次文件。</p>
+<p><strong>9. 内容会自动更新吗？</strong> 不会。工具里内置的是当前版本的法规文本。以后若有修改，需要安装新版本。</p>
+<p><strong>10. 遇到噪声、油烟这些事，去哪里反映？</strong> 拨打 <strong>12345</strong>（政务服务便民热线）或 <strong>12369</strong>（生态环境举报热线）。</p>
+<hr/>
+<h2 id="h-九-几句要紧的提醒-8">九、几句要紧的提醒</h2>
+<ul>
+<li>这个工具是<strong>学习的帮手</strong>，不是官方发布平台，也不构成法律意见。</li>
+<li>遇到实际问题，请以<strong>官方正式文本和有权机关的解釋</strong>为准。</li>
+<li>噪声、油烟、恶臭、光污染等扰民问题，请拨打 <strong>12345 / 12369</strong>。</li>
+<li>工具里的背景音、图标都是程序自动生成的，没有使用他人素材。</li>
+</ul>
+<hr/>
+<h2 id="h-附录一-18-个常见场景-点一下就能查-9">附录一　18 个常见场景，点一下就能查</h2>
+<div class="tw"><table>
+<thead><tr><th>场景</th><th>心里想的问题</th></tr></thead>
+<tbody>
+<tr><td>广场舞音乐太吵</td><td>音量有没有上限？能罚多少？</td></tr>
+<tr><td>楼下烧烤油烟</td><td>没装净化设备算违法吗？</td></tr>
+<tr><td>周末装修电钻</td><td>装修有没有规定时间？</td></tr>
+<tr><td>夜间施工吵人</td><td>晚上能施工吗？</td></tr>
+<tr><td>有人烧秸秆</td><td>烧秸秆违法吗？</td></tr>
+<tr><td>广告屏彻夜亮</td><td>太亮扰民算污染吗？</td></tr>
+<tr><td>偷倒建筑垃圾</td><td>抓住怎么处理？</td></tr>
+<tr><td>货车冒黑烟</td><td>尾气超标管不管？</td></tr>
+<tr><td>河里有人电鱼</td><td>电鱼要负什么责任？</td></tr>
+<tr><td>工厂偷排废水</td><td>暗管偷排怎么罚？</td></tr>
+<tr><td>罚款能罚多重</td><td>拖着不改会怎样？</td></tr>
+<tr><td>谁来替生态告状</td><td>谁会替环境打官司？</td></tr>
+<tr><td>企业要办什么证</td><td>排污需要什么手续？</td></tr>
+<tr><td>往海里倒垃圾</td><td>海洋倾倒有什么规定？</td></tr>
+<tr><td>绿水青山的红线</td><td>生态保护红线是什么？</td></tr>
+<tr><td>光伏发电有说法吗</td><td>绿色能源有没有支持政策？</td></tr>
+<tr><td>快递包装太夸张</td><td>过度包装管不管？</td></tr>
+<tr><td>我想举报怎么办</td><td>举报有哪些权利和保护？</td></tr>
+</tbody></table></div>
+<h2 id="h-附录二-法典里的行话-一句话看懂-10">附录二　法典里的行话，一句话看懂</h2>
+<div class="tw"><table>
+<thead><tr><th>行话</th><th>说白了就是</th></tr></thead>
+<tbody>
+<tr><td>排污许可</td><td>企业排污的&quot;身份证&quot;，持证排污、按证排污</td></tr>
+<tr><td>环境影响评价</td><td>项目开工前先给环境做个体检</td></tr>
+<tr><td>生态保护红线</td><td>绝对不能碰的保护底线</td></tr>
+<tr><td>按日连续处罚</td><td>让你改你不改，罚款按天数往上加</td></tr>
+<tr><td>生态环境损害赔偿</td><td>破坏了环境，修复的费用得你出</td></tr>
+<tr><td>公益诉讼</td><td>有人替没法说话的生态环境打官司</td></tr>
+<tr><td>举证责任倒置</td><td>环境纠纷里，由排污方证明自己没造成损害</td></tr>
+<tr><td>危险废物</td><td>有危险特性的废弃物，处理起来规矩特别多</td></tr>
+<tr><td>新污染物</td><td>新被盯上的化学物质，生产使用受限制</td></tr>
+<tr><td>自然保护地</td><td>分级管理的保护区，核心区不能随便进</td></tr>
+<tr><td>碳排放权交易</td><td>排放额度可以交易，超了得买、欠了得补</td></tr>
+<tr><td>生态修复</td><td>把被破坏的生态环境治回来，能修的优先修</td></tr>
+<tr><td>查封扣押</td><td>执法部门把可能造成严重污染的设施设备先扣下</td></tr>
+<tr><td>排污口</td><td>污染物排进环境的最后一道关口</td></tr>
+<tr><td>生态环境准入清单</td><td>一个地区&quot;什么能干什么不能干&quot;的清单</td></tr>
+<tr><td>生态环境</td><td>水、空气、土地、生物等自然条件的总称</td></tr>
+</tbody></table></div>
+<h2 id="h-附录三-遇到问题-找谁-11">附录三　遇到问题，找谁</h2>
+<div class="tw"><table>
+<thead><tr><th>情况</th><th>找谁 / 打哪个电话</th></tr></thead>
+<tbody>
+<tr><td>噪声、油烟、恶臭、光污染扰民</td><td>12345 或 12369</td></tr>
+<tr><td>发现偷排、偷倒、非法捕捞</td><td>12369（也可向当地生态环境、农业农村部门反映）</td></tr>
+<tr><td>想咨询法律问题、准备维权</td><td>当地法律援助中心或律师</td></tr>
+<tr><td>工具本身用不了、有错漏</td><td>联系工具的提供者</td></tr>
+</tbody></table></div>
+<hr/>
+<p><em>本说明书随应用一同发布。文中内容为便于理解做了通俗化表达，法条含义请以《中华人民共和国生态环境法典》正式文本为准。</em></p>
+</main>
+<footer>
+  本说明书随应用一同发布 · 全文数据整理自公开发布文本，仅供普法学习参考<br/>
+  扰民问题请拨打 12345 / 12369
+</footer>
+</div>
+</body>
+</html>
