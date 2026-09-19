@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "lint": "oxlint",
     "test": "node scripts/test-search.mjs",
+    "smoke": "node scripts/verify-deploy.mjs",
     "cap:sync": "npm run build:mobile && cap sync android",
     "apk": "npm run cap:sync && cd android && gradlew assembleDebug",
     "apk:release": "npm run cap:sync && cd android && gradlew assembleRelease",

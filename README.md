@@ -4,6 +4,17 @@
 
 一个纯前端项目，同时提供**网页版**与**Android App**。没有后端、没有账号、没有广告，检索全部在本地完成。
 
+## 🌐 在线访问
+
+| 方式 | 地址 | 说明 |
+|------|------|------|
+| 网页版（推荐先用这个） | **https://fengju23.github.io/eco-law-search/** | 推送 main 分支自动构建发布 |
+| Android App 下载 | [Releases](https://github.com/fengju23/eco-law-search/releases/latest) → `eco-law-search-v1.0.apk` | 约 8.2MB，Android 7.0+ |
+
+> ⚠️ **国内访问提示**：GitHub Pages 与 GitHub Releases 的下载走 Fastly CDN，中国大陆直连常不稳定或不通（需代理）。
+> 如果面向国内用户，建议另部署一份到 Cloudflare Pages、Vercel、Netlify，或国内对象存储 + 自定义域名（国内主机需 ICP 备案）。
+> 部署只需上传 `dist/` 静态文件，无需任何后端。
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 ![React](https://img.shields.io/badge/React-19-61dafb.svg)
 ![Vite](https://img.shields.io/badge/Vite-8-646cff.svg)
@@ -73,6 +84,22 @@ npm run build      # 生产构建（桌面/网页版）
 npm test           # 检索引擎验收测试（31 项）
 npm run lint       # oxlint
 ```
+
+## 部署
+
+网页版由 GitHub Actions 自动部署到 GitHub Pages（见 `.github/workflows/deploy-pages.yml`）：
+推送到 `main` 即触发构建并发布，子路径为 `/eco-law-search/`。
+
+部署后可运行冒烟测试校验线上可用性：
+
+```bash
+npm run smoke        # 校验首页 / 资源 / 数据 / 背景音 / 深链
+# 国内网络需让 Node 走代理：
+#   $env:HTTPS_PROXY="http://127.0.0.1:7897"; $env:NODE_USE_ENV_PROXY="1"
+```
+
+如需部署到其他平台（Cloudflare Pages / Vercel / Netlify / 对象存储），
+直接上传 `dist/` 目录即可，无需后端；注意若部署在子路径下，构建时需指定 `--base=/子路径/`。
 
 ## 打包 Android App
 
