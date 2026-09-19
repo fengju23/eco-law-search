@@ -1,0 +1,62 @@
+name: 部署网页版到 GitHub Pages
+
+# 推送 main 分支或手动触发时，自动构建并发布网页版
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同一时间只保留一个部署任务
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: 安装依赖
+        run: npm ci
+
+      - name: 运行检索引擎验收测试
+        run: npm test
+
+      - name: 生成网页版背景音
+        # 桌面版 485MB 音频不入库，此处按需合成体积较小的 4 首（约 5MB）
+        run: |
+          npm run gen:sound:mobile
+          mkdir -p public/sounds
+          cp public-mobile/sounds/*.wav public/sounds/
+
+      - name: 构建（子路径部署）
+        run: npx vite build --base=/eco-law-search/
+
+      - name: 上传构建产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 发布到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
